@@ -15,7 +15,7 @@
 
       <div class="jumbotron jumbotron-fluid bg-danger text-white text-center">
           <div class="container">
-              <h1 class="display-1">POMODORO</h1>
+              <h1 class="display-4">POMODORO</h1>
           </div>
       </div>
 
@@ -27,31 +27,31 @@
           <br>
         <div class= "row">
             <div class="col pr-0">
-                <button type="button" class="btn btn-danger border border-white">▲</button>
+                <button type="button" id="inc1" class="btn btn-danger border border-white">▲</button>
             </div>
-            <div class="col pl-0 pr-0">25</div>
+            <div id = "session" class="col pl-0 pr-0">25:00</div>
             <div class="col pl-0">
-                <button type="button" class="btn btn-danger border border-white">▼</button>
+                <button type="button" id="dec1" class="btn btn-danger border border-white">▼</button>
             </div>
             <div class="col pr-0">
-                <button type="button" class="btn btn-danger border border-white">▲</button>
+                <button type="button" id="inc2" class="btn btn-danger border border-white">▲</button>
             </div>
-            <div class="col pl-0 pr-0">5</div>
+            <div id = "break" class="col pl-0 pr-0">05:00</div>
             <div class="col pl-0">
-                <button type="button" class="btn btn-danger border border-white">▼</button>
+                <button type="button" id="dec2" class="btn btn-danger border border-white">▼</button>
             </div>
         </div>
       </div>
 
       <div class = "container text-center py-5 mt-5">
         <div class = "row text-center" style = "height: 100px;"> 
-            <button type="button" class="btn btn-primary btn-lg col-2">
+            <button type="button" id = "start-btn" class="btn btn-primary btn-lg col-2">
                 <i class="fa fa-play fa-3x"></i>
             </button>
             <div class = "container col-4 text-center bg-danger rounded text-light">
               <h1 class= "py-5" id = "clock">25:00</h1>
             </div>
-            <button type="button" class="col-2 btn btn-primary btn-lg">
+            <button type="button" id = "pause-btn" class="col-2 btn btn-primary btn-lg">
                 <i class="fa fa-pause fa-3x"></i>
             </button>
       </div>
@@ -59,7 +59,7 @@
 
       <div class="container">
           <div class="col py-5 text-center">
-              <button type="button" class="btn btn-warning text-light mr-1 ml-1">Reset</button>
+              <button type="button" id = "reset-btn" class="btn btn-warning text-light mr-1 ml-1">Reset</button>
           </div>
        </div>
 
